@@ -1,0 +1,162 @@
+* {
+  margin: 0px;
+  font-family: 'Catamaran', sans-serif;
+}
+
+.contenedor-todo {
+  display: flex;
+  flex: row;
+  min-height: 100vh;
+}
+
+.contenedor-textarea {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  background-color: #FFDDA1;
+  border: solid rgb(99, 99, 99) 1px;
+  border-top: none;
+  min-height: 90vh;
+}
+
+
+.contenedor-preview {
+  display: flex;
+  flex-direction: column;
+  width: 50vw;
+  background-color: #FFDDA1;
+  min-height: 90vh;
+}
+
+#editor {
+  background-color: #FFDDA1;
+  padding: 30px;
+  resize: none;
+  border: none;
+  outline: none;
+  font-size: 1.05rem;
+  min-height: 86vh;
+}
+
+.toolbox1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #EDB230;
+  border: solid black 1px;
+  font-size: 28px;
+
+}
+
+.toolbox1 p {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.toolbox2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  background-color: #EDB230;
+  border: solid black 1px;
+  font-size: 28px;
+}
+
+.toolbox2 p {
+  margin-left: 10px;
+  margin-top: 4px;
+}
+
+.contenedor-texto {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: solid rgb(99, 99, 99) 1px;
+  border-top: none;
+  height: auto;
+  min-height: 87vh;
+  max-height: 87vh;
+}
+#preview {
+  display: block;
+  overflow-wrap: break-word; 
+  overflow: auto;
+  font-size: 1.15rem;
+}
+
+
+
+/* SCROLLBAR STYLE */
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #FFDDA1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* MARKDOWN STYLES */
+
+h1 {
+  font-size: 2.0rem;
+  display: flex;
+  justify-content: center;
+  border-bottom: 2px solid black;
+}
+h2 {
+  border-bottom: 1px solid black;
+  padding-top: 15px;
+}
+h3 {
+  padding-top: 15px;
+}
+blockquote {
+  border-left: 3px solid #EDB230;
+  margin-left: 25px;
+  padding-left: 5px;
+}
+
+code {
+  background: white;
+  font-size: 0.875rem;
+  font-weight: bold;
+}
+td,
+th {
+  border: 2px solid black;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img {
+  display: block;
+  max-width: 90%;
+  margin: 2rem auto;
+}
+pre {
+  display: block;
+  overflow: auto;
+  background: white;
+  padding: 5px;
+  line-height: 1.2;
+}
+table {
+  border-collapse: collapse;
+}
